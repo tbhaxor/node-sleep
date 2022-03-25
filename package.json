@@ -30,19 +30,6 @@
   "dependencies": {
     "ffi-napi": "^4.0.3"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "src/*.ts": [
-      "npm run format",
-      "npm run lint"
-    ],
-    "test/*.spec.ts": [
-      "npm run format",
-      "npm run lint"
-    ]
-  },
   "devDependencies": {
     "@faker-js/faker": "^6.0.0",
     "@types/ffi-napi": "^4.0.5",
@@ -51,12 +38,10 @@
     "@typescript-eslint/parser": "^5.16.0",
     "eslint": "^8.11.0",
     "jest": "^27.5.1",
-    "lint-staged": "^12.3.7",
     "prettier": "^2.6.0",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.2",
-    "yorkie": "^2.0.0"
+    "typescript": "^4.6.2"
   },
   "jest": {
     "moduleFileExtensions": [
