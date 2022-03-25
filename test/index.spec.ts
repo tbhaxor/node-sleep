@@ -64,7 +64,7 @@ describe("@tbhaxor/node-sleep testing", () => {
       usleep(msec);
       const end = Date.now();
 
-      expect(end - start).toBeGreaterThanOrEqual(sec * 1000);
+      expect(end - start).toBeGreaterThanOrEqual(+(msec / 1000).toFixed(0));
     });
   });
 });
