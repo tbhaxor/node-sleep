@@ -1,6 +1,6 @@
 {
   "name": "@tbhaxor/node-sleep",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Synchronous sleep for your javascript project",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
