@@ -1,4 +1,4 @@
-# Nodejs Sleep
+# Nodejs Sleep [![Unit Testing](https://github.com/tbhaxor/node-sleep/actions/workflows/ci.yaml/badge.svg)](https://github.com/tbhaxor/node-sleep/actions/workflows/ci.yaml)
 
 As we all know that nodejs is a single threaded async language and you need to have `async` wrapper to execute your own sleep function. But sometimes it is required to have a synchronous sleep to make things simple and easy to understand.
 
