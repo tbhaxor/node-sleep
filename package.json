@@ -57,7 +57,6 @@
     "testEnvironment": "node"
   },
   "homepage": "https://github.com/tbhaxor/node-sleep#readme",
-  "readme": "https://github.com/tbhaxor/node-sleep#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tbhaxor/node-sleep.git"
