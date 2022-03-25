@@ -1,0 +1,86 @@
+{
+  "name": "@tbhaxor/node-sleep",
+  "version": "0.1.0",
+  "description": "Synchronous sleep for your javascript project",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "format": "prettier -w lib",
+    "lint": "eslint lib --fix",
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "sleep",
+    "libc",
+    "usleep",
+    "sync sleep",
+    "synchronous",
+    "time"
+  ],
+  "author": {
+    "email": "tbhaxor@gmail.com",
+    "name": "Gurkirat Singh",
+    "url": "https://tbhaxor.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ffi-napi": "^4.0.3"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.ts": [
+      "npm run format",
+      "npm run lint"
+    ],
+    "test/*.spec.ts": [
+      "npm run format",
+      "npm run lint"
+    ]
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0",
+    "@types/ffi-napi": "^4.0.5",
+    "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.2",
+    "yorkie": "^2.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "test",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "homepage": "https://github.com/tbhaxor/node-sleep#readme",
+  "readme": "https://github.com/tbhaxor/node-sleep#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbhaxor/node-sleep.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tbhaxo/node-sleep/issues"
+  },
+  "os": [
+    "!win32"
+  ]
+}
